@@ -1,0 +1,20 @@
+{
+  "name": "telegram-bingo-persistent",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Persistent Telegram Bingo Mini App demo using PostgreSQL; real-money features disabled",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/init-db.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1",
+    "telegraf": "^4.16.3"
+  }
+}
